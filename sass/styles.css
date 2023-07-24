@@ -500,6 +500,13 @@ body {
   border: 1px solid #1A3E3E;
 }
 
+.centred--button {
+  display: block;
+  width: 244px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .program__button {
   padding: 16px 36px;
   background: #FDFDFD;
@@ -516,6 +523,14 @@ body {
 .program__button:hover {
   background: #1A3E3E;
   color: #FDFDFD;
+}
+
+.blog__button {
+  width: 220px;
+}
+
+.gallery__button {
+  width: 178px;
 }
 
 .dropdown {
@@ -625,7 +640,7 @@ body {
 }
 
 .program-tour {
-  margin-bottom: 100px;
+  padding: 80px 0 100px;
 }
 
 .program-tour__wrapper {
@@ -677,7 +692,6 @@ body {
 .program-offers {
   background: #F3F5F4;
   padding: 80px 0 100px;
-  margin-bottom: 80px;
 }
 
 .program-offers__wrapper {
@@ -762,6 +776,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 250px);
   gap: 10px;
+}
+
+.popular-directions {
+  padding: 80px 0 100px;
 }
 
 .popular-directions__wrapper {
@@ -894,13 +912,6 @@ body {
   display: inline-block;
 }
 
-.centred--button {
-  display: block;
-  width: 244px;
-  text-align: center;
-  margin: 0 auto 100px;
-}
-
 .blog {
   padding: 80px 0 100px;
   background: #F3F5F4;
@@ -979,6 +990,23 @@ body {
   text-decoration: underline;
 }
 
+.gallery {
+  padding: 80px 0 100px;
+}
+
+.gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.gallery__wrapper img:nth-child(1) {
+  grid-column: 1/3;
+}
+.gallery__wrapper img:nth-child(5) {
+  grid-column: 2/4;
+}
+
 .header {
   width: 100%;
   height: 985px;
@@ -986,7 +1014,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 100px;
 }
 
 .header__wrapper {

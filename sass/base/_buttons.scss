@@ -16,6 +16,13 @@
     }
 }
 
+.centred--button {
+    display: block;
+    width: 244px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .program__button {
     padding: 16px 36px;
     background: $color-light-gray;
@@ -32,4 +39,12 @@
         background: $color-dark-green;
         color: $color-light-gray;
     }
+}
+
+.blog__button {
+    width: 220px;
+}
+
+.gallery__button {
+    width: 178px;
 }
