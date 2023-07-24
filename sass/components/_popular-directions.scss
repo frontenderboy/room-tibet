@@ -1,0 +1,122 @@
+.popular-directions__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.popular-directions__item {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+.ranking-badge {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 65px;
+    height: 32px;
+    padding: 4px 8px;
+    border-radius: 4px 0px 0px 4px;
+    background: rgba(253, 253, 253, 0.40);
+    backdrop-filter: blur(2px);
+    transition: opacity .3s ease-in-out;
+}
+
+.badge-number {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    @include font (1.4rem, 700, 18px);
+    text-align: right;
+    color: #1A3E3E;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/popular-directions/star.svg');
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    color: #fff;
+    padding: 20px 32px;
+    border-radius: 0 0 32px 32px;
+    transform: translateY(410px); 
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.overlay-minimal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overlay-title {
+    @include font (2.4rem, 700, 29px);
+    color: $color-light-gray;
+}
+
+.overlay-subtitle {
+    @include font (1.4rem, 400, 18px);
+    color: $color-light-gray;
+}
+
+.overlay-badge {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.30);
+
+    @include font (2rem, 700, 24px);
+    color: $color-light-gray;
+}
+
+.hidden-text {
+    display: none;
+    @include font (1.6rem, 400, 24px);
+    color: $color-light-gray;
+    margin: 38px 0 105px;
+}
+
+.overlay-button {
+    display: none;
+}
+
+.popular-directions__item:hover .ranking-badge{
+    opacity: 0;
+}
+
+.popular-directions__item:hover .overlay {
+    transform: translateY(0); 
+    border-radius: 32px;
+}
+
+.popular-directions__item:hover .hidden-text,
+.popular-directions__item:hover .overlay-button {
+    display: inline-block;
+}
+
+.directions--button {
+    display: block;
+    width: 244px;
+    text-align: center;
+    margin: 0 auto 100px;
+}

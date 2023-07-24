@@ -12,17 +12,19 @@
     position: relative;
     min-width: 480px;
     min-height: 526px;
+}
 
-    &::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        top: 301px;
-        left: 280px;
-        background-image: url('../images/program-tour/play.svg');
-        cursor: pointer;
-    }
+.play-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 301px;
+    left: 280px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    background-image: url('../images/program-tour/play.svg');
+    cursor: pointer;
 }
 
 .tour-videos__cover {

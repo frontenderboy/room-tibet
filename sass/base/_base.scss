@@ -22,9 +22,18 @@ body {
     margin-bottom: 8px;
 }
 
+.main--section-subtitle {
+    text-align: center;
+}
+
 .section-title {
     @include font (3.2rem, 800, 38.5px);
     color: #18121E;
     max-width: 580px;
     margin-bottom: 40px;
+}
+
+.main--section-title {
+    text-align: center;
+    max-width: 100%;
 }
