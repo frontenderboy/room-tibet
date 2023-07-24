@@ -18,7 +18,7 @@ body {
 
 .section-subtitle {
     @include font (2.4rem, 400, 20px);
-    color: #F2BE22;
+    color: $color-yellow;
     margin-bottom: 8px;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .section-title {
     @include font (3.2rem, 800, 38.5px);
-    color: #18121E;
+    color: $color-black;
     max-width: 580px;
     margin-bottom: 40px;
 }
