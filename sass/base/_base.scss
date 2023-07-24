@@ -15,3 +15,16 @@ body {
     max-width: 1180px;
     margin: 0 auto;
 }
+
+.section-subtitle {
+    @include font (2.4rem, 400, 20px);
+    color: #F2BE22;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    @include font (3.2rem, 800, 38.5px);
+    color: #18121E;
+    max-width: 580px;
+    margin-bottom: 40px;
+}
