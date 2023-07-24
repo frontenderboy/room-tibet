@@ -1,0 +1,58 @@
+.program-offers {
+    background: $color-background;
+    padding: 80px 100px;
+    margin-bottom: 80px;
+}
+
+.program-offers__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program-offers__about {
+    max-width: 580px;
+}
+
+.program-offers__text {
+    @include font (1.8rem, 400, 27px);
+    color: $color-black;
+    margin-bottom: 40px;
+}
+
+.program-offers__offer {
+    position: relative;
+    padding-left: 66px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &.first--offer::after {
+        @include offer-icon ('../images/program-offers/experienced-guide.svg')
+    };
+    &.second--offer::after {
+        @include offer-icon ('../images/program-offers/safe.svg')
+    };
+    &.third--offer::after {
+        @include offer-icon ('../images/program-offers/price.svg')
+    }
+}
+
+.offer__title {
+    @include font (1.8rem, 700, 20px);
+    color: $color-black;
+    letter-spacing: 0.216px;
+    margin-bottom: 4px;
+}
+
+.offer__text {
+    @include font (1.4rem, 400, 20px);
+    color: $color-black;
+}
+
+.program-offers__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 10px
+}
