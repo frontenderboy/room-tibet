@@ -1,0 +1,17 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../font/NEXT-ART_Bold.otf);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
