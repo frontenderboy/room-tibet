@@ -934,7 +934,6 @@ body {
 
 .blog__item {
   display: flex;
-  align-items: center;
   padding: 16px;
   background: #FDFDFD;
   border-radius: 10px;
@@ -945,6 +944,8 @@ body {
 }
 
 .blog__item-desc {
+  display: flex;
+  flex-direction: column;
   max-width: 294px;
   margin-left: 24px;
   padding: 16px 0;
@@ -972,8 +973,9 @@ body {
 
 .item-desc__footer {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .item-desc__time {
