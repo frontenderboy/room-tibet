@@ -1,0 +1,129 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background: $color-dark-green;
+    padding: 178px 0 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.wrapper__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title {
+    @include font (2rem, 700, 24px);
+    color: $color-background;
+    margin-bottom: 17px;
+}
+
+.footer__text {
+    @include font (1.4rem, 400, 20px);
+    color: $color-white;
+    max-width: 456px;
+    margin-bottom: 80px;
+}
+
+.footer__contacts {
+    margin-bottom: 32px;
+}
+
+.footer__mail,
+.footer__phone {
+    display: inline-block;
+    @include font (1.4rem, 600, 18px);
+    color: $color-white;
+    text-decoration: underline;
+    margin-right: 24px;
+    @extend %transition;
+
+    &:hover {
+        color: $color-yellow;
+    }
+}
+
+.social-media {
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 16px;
+    };
+    & li path {
+        @extend %transition;
+        &:hover {
+            fill: $color-yellow;
+        }
+    }
+}
+
+.list__title {
+    @include font (2rem, 700, 24px);
+    color: $color-background;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    width: 280px;
+
+    & li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        & svg {
+            margin-right: 10px;
+            & path {
+                transition: fill .3s ease-in-out;
+            }
+        }
+    
+        & a {
+            @include font (1.4rem, 400, 18px);
+            color: $color-light-gray;
+            @extend %transition;
+        };
+        &:hover a, &:hover svg path {
+            fill: $color-yellow;
+            color: $color-yellow;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__list-new-item {
+    padding: 2px 10px;
+    border-radius: 4px;
+    background: $color-white;
+    margin-left: 8px;
+
+    @include font (1.2rem, 700, 16px);
+    color: $color-dark-green;
+    text-transform: lowercase;
+}
+
+.copyright {
+    padding: 24px 0;
+    background: $color-black;
+}
+
+.copyright__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright__name {
+    @include font (1.4rem, 600, 18px);
+    color: $color-white;
+}
+
+.copyright__link {
+    @include font (1.4rem, 600, 18px);
+    color: $color-white;
+    text-decoration-line: underline;
+}
