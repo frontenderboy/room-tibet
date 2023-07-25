@@ -934,6 +934,7 @@ body {
 
 .blog__item {
   display: flex;
+  justify-content: space-between;
   padding: 16px;
   background: #FDFDFD;
   border-radius: 10px;
@@ -946,8 +947,7 @@ body {
 .blog__item-desc {
   display: flex;
   flex-direction: column;
-  max-width: 294px;
-  margin-left: 24px;
+  width: 294px;
   padding: 16px 0;
 }
 
