@@ -7,6 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-laptop {
+        flex-direction: column;
+    }
 }
 
 .program-offers__about {
@@ -50,8 +54,23 @@
     color: $color-black;
 }
 
+.offers__button {
+    display: block;
+    margin: auto;
+}
+
 .program-offers__gallery {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    gap: 10px
+    gap: 10px;
+
+    @include media-laptop {
+        margin-top: 50px;
+    };
+    @include media-tablet {
+        grid-template-columns: 1fr;
+    };
+    @include media-mobile {
+        display: none;
+    }
 }
