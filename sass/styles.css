@@ -468,6 +468,11 @@ body {
   color: #F2BE22;
   margin-bottom: 8px;
 }
+@media (max-width: 469px) {
+  .section-subtitle {
+    font-size: 1.6rem;
+  }
+}
 
 .main--section-subtitle {
   text-align: center;
@@ -481,6 +486,11 @@ body {
   color: #18121E;
   max-width: 580px;
   margin-bottom: 40px;
+}
+@media (max-width: 469px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
 }
 
 .main--section-title {
@@ -768,13 +778,29 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1220px) {
+  .program-tour__wrapper {
+    flex-direction: column-reverse;
+  }
+}
 
 .program-tour__videos {
   position: relative;
   min-width: 480px;
   min-height: 526px;
 }
+@media (max-width: 769px) {
+  .program-tour__videos {
+    min-width: auto;
+    min-height: auto;
+  }
+}
 
+@media (max-width: 769px) {
+  .tour-videos__img {
+    display: none;
+  }
+}
 .play-button {
   position: absolute;
   width: 50px;
@@ -787,12 +813,38 @@ body {
   background-image: url("../images/program-tour/play.svg");
   cursor: pointer;
 }
+@media (max-width: 769px) {
+  .play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
 .tour-videos__cover {
   position: absolute;
   top: 126px;
   left: 130px;
   cursor: pointer;
+}
+@media (max-width: 769px) {
+  .tour-videos__cover {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 469px) {
+  .tour-videos__cover {
+    width: 300px;
+  }
+}
+@media (max-width: 315px) {
+  .tour-videos__cover {
+    width: 250px;
+  }
 }
 
 .program-tour__about {
@@ -807,6 +859,11 @@ body {
   line-height: 27px;
   color: #18121E;
   margin-bottom: 40px;
+}
+@media (max-width: 769px) {
+  .program-tour__text {
+    font-size: 1.6rem;
+  }
 }
 
 .program-offers {
@@ -1324,7 +1381,7 @@ label {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 469px) {
   .header__title {
     font-size: 1.7rem;
     line-height: 29px;

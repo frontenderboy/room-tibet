@@ -25,10 +25,14 @@
     @media (max-width: 1069px) { @content; }
 }
 
+@mixin media-tablet {
+    @media (max-width: 769px) { @content; }
+}
+
 @mixin media-mobile {
     @media (max-width: 469px) { @content; }
 }
 
 @mixin media-minmobile {
-    @media (max-width: 360px) { @content; }
+    @media (max-width: 315px) { @content; }
 }

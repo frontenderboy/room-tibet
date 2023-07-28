@@ -6,12 +6,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-laptop {
+        flex-direction: column-reverse;
+    }
 }
 
 .program-tour__videos {
     position: relative;
     min-width: 480px;
     min-height: 526px;
+
+    @include media-tablet {
+        min-width: auto;
+        min-height: auto;
+    }
+}
+
+@include media-tablet {
+    .tour-videos__img {
+        display: none;
+    }
 }
 
 .play-button {
@@ -25,6 +40,12 @@
     background-color: transparent;
     background-image: url('../images/program-tour/play.svg');
     cursor: pointer;
+
+    @include media-tablet {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    };
 }
 
 .tour-videos__cover {
@@ -32,6 +53,20 @@
     top: 126px;
     left: 130px;
     cursor: pointer;
+
+    @include media-tablet {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: auto;
+    };
+    @include media-mobile {
+        width: 300px;
+    };
+    @include media-minmobile {
+        width: 250px;
+    }
 }
 
 .program-tour__about {
@@ -43,4 +78,8 @@
     @include font (1.8rem, 400, 27px);
     color: #18121E;
     margin-bottom: 40px;
+
+    @include media-tablet {
+        font-size: 1.6rem;
+    }
 }
