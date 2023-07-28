@@ -7,23 +7,30 @@
         @include font (1.4rem, 400, 21px);
         color: $color-light-gray;
         padding-left: 8px;
-    }
+    };
+
+	@include media-laptop {
+		margin-bottom: 25px;
+	}
+	@include media-mobile {
+		display: none;
+	}
 }
 
 .dropdown__button {
-  position: relative;
+  	position: relative;
 	display: block;
 	width: 100%;
 	text-align: left;
 
-  background: transparent;
+  	background: transparent;
 	border: 1px solid $color-light-gray;
 	border-radius: 8px;
 	height: 52px;
-  margin-bottom: 8px;
-  padding: 14px 16px;
-  @include font (1.6rem, 700, 24px);
-  color: $color-light-gray;
+  	margin-bottom: 8px;
+  	padding: 14px 16px;
+  	@include font (1.6rem, 700, 24px);
+  	color: $color-light-gray;
     
 	cursor: pointer;
 }
@@ -36,12 +43,12 @@
 .dropdown__button::after {
 	content: "";
 	position: absolute;
-  width: 20px;
-  height: 20px;
+  	width: 20px;
+  	height: 20px;
 	top: 50%;
 	right: 15px;
 	transform: translateY(-50%);
-  background-image: url('../images/header/arrow-down.svg');
+  	background-image: url('../images/header/arrow-down.svg');
 	pointer-events: none;
 }
 

@@ -42,3 +42,30 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 		}
 	});
 });
+
+
+
+const burgerNode = document.querySelector('[data-burger]');
+const navbarNode = document.querySelector('[data-navbar]');
+const navItems = navbarNode.querySelectorAll('a');
+const headerLogo = document.querySelector('.header__logo');
+
+burgerNode.addEventListener('click', () => {
+    document.body.classList.toggle('stop--scroll');
+    burgerNode.classList.toggle('burger--active');
+    navbarNode.classList.toggle('nav--visible');
+})
+
+headerLogo.addEventListener('click', () => {
+    document.body.classList.remove('stop--scroll');
+    burgerNode.classList.remove('burger--active');
+    navbarNode.classList.remove('nav--visible');
+})
+
+navItems.forEach(el => {
+    el.addEventListener('click', () => {
+        document.body.classList.remove('stop--scroll');
+        burgerNode.classList.remove('burger--active');
+        navbarNode.classList.remove('nav--visible');
+    })
+})

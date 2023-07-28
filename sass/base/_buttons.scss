@@ -1,6 +1,7 @@
 .prim-button {
     display: inline-block;
     padding: 12px 24px;
+    height: 44px;
     background: $color-dark-green;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -38,6 +39,10 @@
     &:hover {
         background: $color-dark-green;
         color: $color-light-gray;
+    };
+
+    @include media-laptop {
+        align-self: center;
     }
 }
 
