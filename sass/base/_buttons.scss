@@ -1,6 +1,7 @@
 .prim-button {
     display: inline-block;
     padding: 12px 24px;
+    text-align: center;
     height: 44px;
     background: $color-dark-green;
     border: 1px solid transparent;
@@ -22,6 +23,11 @@
     width: 244px;
     text-align: center;
     margin: 0 auto;
+
+    @include media-mobile {
+        width: 200px;
+        font-size: 1.3rem;
+    }
 }
 
 .program__button {

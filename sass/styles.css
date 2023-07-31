@@ -502,6 +502,7 @@ body {
 .prim-button {
   display: inline-block;
   padding: 12px 24px;
+  text-align: center;
   height: 44px;
   background: #1A3E3E;
   border: 1px solid transparent;
@@ -524,6 +525,12 @@ body {
   width: 244px;
   text-align: center;
   margin: 0 auto;
+}
+@media (max-width: 469px) {
+  .centred--button {
+    width: 200px;
+    font-size: 1.3rem;
+  }
 }
 
 .program__button {
@@ -990,12 +997,20 @@ body {
 }
 
 .popular-directions__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
   margin-bottom: 50px;
+}
+@media (max-width: 1220px) {
+  .popular-directions__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .popular-directions__item {
+  max-width: 385px;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -1004,6 +1019,11 @@ body {
   width: 100%;
   height: auto;
   cursor: pointer;
+}
+@media (max-width: 469px) {
+  .popular-directions__item {
+    max-width: 300px;
+  }
 }
 
 .ranking-badge {
@@ -1057,6 +1077,17 @@ body {
   transition: transform 0.5s;
   cursor: pointer;
 }
+@media (max-width: 469px) {
+  .overlay {
+    transform: translateY(310px);
+    padding: 20px 24px;
+  }
+}
+@media (max-width: 315px) {
+  .overlay {
+    transform: translateY(240px);
+  }
+}
 
 .overlay-minimal {
   display: flex;
@@ -1071,6 +1102,16 @@ body {
   line-height: 29px;
   color: #FDFDFD;
 }
+@media (max-width: 469px) {
+  .overlay-title {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 315px) {
+  .overlay-title {
+    font-size: 1.4rem;
+  }
+}
 
 .overlay-subtitle {
   font-size: 1.4rem;
@@ -1078,6 +1119,11 @@ body {
   font-weight: 400;
   line-height: 18px;
   color: #FDFDFD;
+}
+@media (max-width: 469px) {
+  .overlay-subtitle {
+    display: none;
+  }
 }
 
 .overlay-badge {
@@ -1090,6 +1136,12 @@ body {
   line-height: 24px;
   color: #FDFDFD;
 }
+@media (max-width: 315px) {
+  .overlay-badge {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+}
 
 .hidden-text {
   display: none;
@@ -1099,6 +1151,19 @@ body {
   line-height: 24px;
   color: #FDFDFD;
   margin: 38px 0 105px;
+}
+@media (max-width: 469px) {
+  .hidden-text {
+    font-size: 1.3rem;
+    margin: 30px 0;
+  }
+}
+@media (max-width: 315px) {
+  .hidden-text {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 5px 0;
+  }
 }
 
 .overlay-button {

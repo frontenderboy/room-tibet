@@ -3,12 +3,19 @@
 }
 
 .popular-directions__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
     margin-bottom: 50px;
+
+    @include media-laptop {
+        grid-template-columns: 1fr;
+    }
 }
 
 .popular-directions__item {
+    max-width: 385px;
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -17,6 +24,10 @@
         width: 100%;
         height: auto;
         cursor: pointer;
+    }
+
+    @include media-mobile {
+        max-width: 300px;
     }
 }
 
@@ -66,6 +77,14 @@
     transform: translateY(410px); 
     transition: transform .5s;
     cursor: pointer;
+
+    @include media-mobile {
+        transform: translateY(310px);
+        padding: 20px 24px;
+    };
+    @include media-minmobile {
+        transform: translateY(240px);
+    }
 }
 
 .overlay-minimal {
@@ -77,11 +96,22 @@
 .overlay-title {
     @include font (2.4rem, 700, 29px);
     color: $color-light-gray;
+
+    @include media-mobile {
+        font-size: 1.9rem;
+    };
+    @include media-minmobile {
+        font-size: 1.4rem;
+    }
 }
 
 .overlay-subtitle {
     @include font (1.4rem, 400, 18px);
     color: $color-light-gray;
+
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .overlay-badge {
@@ -91,6 +121,11 @@
 
     @include font (2rem, 700, 24px);
     color: $color-light-gray;
+
+    @include media-minmobile {
+        font-size: 1.5rem;
+        padding: 8px 12px;
+    }
 }
 
 .hidden-text {
@@ -98,6 +133,16 @@
     @include font (1.6rem, 400, 24px);
     color: $color-light-gray;
     margin: 38px 0 105px;
+
+    @include media-mobile {
+        font-size: 1.3rem;
+        margin: 30px 0;
+    };
+    @include media-minmobile {
+        font-size: 1rem;
+        line-height: 20px;
+        margin: 5px 0;
+    }
 }
 
 .overlay-button {
