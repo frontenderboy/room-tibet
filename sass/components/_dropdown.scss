@@ -52,7 +52,7 @@
 	pointer-events: none;
 }
 
-.dropdown--date::after {
+.dropdown__button--date::after {
     background-image: url('../images/header/formkit_date.svg');
     background-repeat: no-repeat;
 }
@@ -81,7 +81,7 @@
 	display: block;
 }
 
-.dropdown__list-item {
+.dropdown__item {
 	margin: 0;
 	padding: 0;
 	border: 1px solid $color-light-gray;
@@ -89,21 +89,19 @@
 	padding: 10px 16px;
 	cursor: pointer;
 
-  @include font (1.7rem, 400, 27px);
-  color: $color-black;
-}
+	@include font (1.7rem, 400, 27px);
+	color: $color-black;
 
-.dropdown__list-item:first-child {
-	border-radius: 6px 6px 0 0;
-}
-
-.dropdown__list-item:last-child {
-	border-radius: 0 0 6px 6px;
-	border-bottom: 1px solid $color-dark-cerulean;
-}
-
-.dropdown__list-item:hover {
-	background: rgba(176, 198, 225, 0.26);
+	&:first-child {
+		border-radius: 6px 6px 0 0;
+	};
+	&:last-child {
+		border-radius: 0 0 6px 6px;
+		border-bottom: 1px solid $color-dark-cerulean;
+	};
+	&:hover {
+		background: rgba(176, 198, 225, 0.26);
+	}
 }
 
 .dropdown__input-hidden {

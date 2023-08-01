@@ -738,7 +738,7 @@ body {
   pointer-events: none;
 }
 
-.dropdown--date::after {
+.dropdown__button--date::after {
   background-image: url("../images/header/formkit_date.svg");
   background-repeat: no-repeat;
 }
@@ -762,7 +762,7 @@ body {
   display: block;
 }
 
-.dropdown__list-item {
+.dropdown__item {
   margin: 0;
   padding: 0;
   border: 1px solid #FDFDFD;
@@ -775,17 +775,14 @@ body {
   line-height: 27px;
   color: #18121E;
 }
-
-.dropdown__list-item:first-child {
+.dropdown__item:first-child {
   border-radius: 6px 6px 0 0;
 }
-
-.dropdown__list-item:last-child {
+.dropdown__item:last-child {
   border-radius: 0 0 6px 6px;
   border-bottom: 1px solid #7E9BBD;
 }
-
-.dropdown__list-item:hover {
+.dropdown__item:hover {
   background: rgba(176, 198, 225, 0.26);
 }
 
