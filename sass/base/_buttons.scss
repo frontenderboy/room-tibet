@@ -66,4 +66,13 @@
 
 .subscribe--button {
     align-self: flex-end;
+
+    @include media-minlaptop {
+        align-self: flex-start;
+        margin: 20px 0;
+    };
+    @include media-minmobile {
+        font-size: 1.3rem;
+        padding: 12px;
+    }
 }

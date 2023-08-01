@@ -571,6 +571,18 @@ body {
 .subscribe--button {
   align-self: flex-end;
 }
+@media (max-width: 1069px) {
+  .subscribe--button {
+    align-self: flex-start;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 315px) {
+  .subscribe--button {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+}
 
 .burger {
   position: relative;
@@ -1227,6 +1239,8 @@ body {
   width: 100%;
   height: 280px;
   border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog__item-desc {
@@ -1302,6 +1316,11 @@ body {
   padding: 80px 0 100px;
   margin-bottom: 100px;
 }
+@media (max-width: 1069px) {
+  .gallery {
+    margin-bottom: 250px;
+  }
+}
 
 .gallery__wrapper {
   display: grid;
@@ -1366,6 +1385,11 @@ body {
   right: 0;
   top: -100px;
 }
+@media (max-width: 1069px) {
+  .subscribe {
+    top: -250px;
+  }
+}
 
 .subscribe__wrapper {
   display: flex;
@@ -1379,6 +1403,33 @@ body {
   max-width: 420px;
   margin-bottom: 0;
 }
+@media (max-width: 1220px) {
+  .subscribe__wrapper .section-title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1069px) {
+  .subscribe__wrapper .section-title {
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1069px) {
+  .subscribe__wrapper {
+    flex-direction: column;
+    padding: 40px;
+  }
+}
+@media (max-width: 469px) {
+  .subscribe__wrapper {
+    padding: 30px;
+  }
+}
+@media (max-width: 315px) {
+  .subscribe__wrapper {
+    padding: 15px;
+  }
+}
 
 .subscribe__inner {
   max-width: 536px;
@@ -1388,9 +1439,20 @@ body {
   display: flex;
   margin-bottom: 8px;
 }
+@media (max-width: 1069px) {
+  .subscribe__form {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+}
 
 .form__input {
   margin-right: 16px;
+}
+@media (max-width: 469px) {
+  .form__input {
+    margin-right: 0;
+  }
 }
 
 label {
@@ -1415,6 +1477,16 @@ label {
   font-weight: 300;
   line-height: 20px;
   color: #18121E;
+}
+@media (max-width: 469px) {
+  .input-email {
+    width: 240px;
+  }
+}
+@media (max-width: 315px) {
+  .input-email {
+    width: 180px;
+  }
 }
 
 .subscribe__text {
@@ -1594,16 +1666,35 @@ label {
   background: #1A3E3E;
   padding: 178px 0 0;
 }
+@media (max-width: 469px) {
+  .footer {
+    padding-top: 250px;
+  }
+}
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
 }
+@media (max-width: 1069px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+
+.subscribe__heading {
+  margin-right: 20px;
+}
 
 .wrapper__column {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1069px) {
+  .wrapper__column:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer__title {
@@ -1624,9 +1715,20 @@ label {
   max-width: 456px;
   margin-bottom: 80px;
 }
+@media (max-width: 1069px) {
+  .footer__text {
+    margin-bottom: 20px;
+  }
+}
 
 .footer__contacts {
+  display: flex;
   margin-bottom: 32px;
+}
+@media (max-width: 469px) {
+  .footer__contacts {
+    flex-direction: column;
+  }
 }
 
 .footer__mail,
@@ -1643,6 +1745,10 @@ label {
 .footer__mail:hover,
 .footer__phone:hover {
   color: #F2BE22;
+}
+
+.footer__mail {
+  margin-bottom: 15px;
 }
 
 .social-media {
@@ -1685,10 +1791,20 @@ label {
   line-height: 18px;
   color: #FDFDFD;
 }
+@media (max-width: 315px) {
+  .footer__list li a {
+    font-size: 1.2rem;
+  }
+}
 .footer__list li:hover a, .footer__list li:hover svg path {
   fill: #F2BE22;
   color: #F2BE22;
   text-decoration: underline;
+}
+@media (max-width: 315px) {
+  .footer__list {
+    width: 250px;
+  }
 }
 
 .footer__list-new-item {
@@ -1714,6 +1830,11 @@ label {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 469px) {
+  .copyright__wrapper {
+    flex-direction: column;
+  }
+}
 
 .copyright__name {
   font-size: 1.4rem;
@@ -1721,6 +1842,11 @@ label {
   font-weight: 600;
   line-height: 18px;
   color: #FFFFFF;
+}
+@media (max-width: 315px) {
+  .copyright__name {
+    font-size: 1.2rem;
+  }
 }
 
 .copyright__link {
@@ -1730,4 +1856,9 @@ label {
   line-height: 18px;
   color: #FFFFFF;
   text-decoration-line: underline;
+}
+@media (max-width: 315px) {
+  .copyright__link {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

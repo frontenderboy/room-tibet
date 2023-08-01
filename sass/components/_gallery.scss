@@ -1,6 +1,10 @@
 .gallery {
     padding: 80px 0 100px;
     margin-bottom: 100px;
+
+    @include media-minlaptop {
+        margin-bottom: 250px;
+    }
 }
 
 .gallery__wrapper {

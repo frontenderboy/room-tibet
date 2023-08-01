@@ -3,17 +3,35 @@
     width: 100%;
     background: $color-dark-green;
     padding: 178px 0 0;
+
+    @include media-mobile {
+        padding-top: 250px;
+    }
 }
 
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+
+    @include media-minlaptop {
+        flex-direction: column;
+    }
+}
+
+.subscribe__heading {
+    margin-right: 20px;
 }
 
 .wrapper__column {
     display: flex;
     flex-direction: column;
+
+    @include media-minlaptop {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .footer__title {
@@ -27,10 +45,19 @@
     color: $color-white;
     max-width: 456px;
     margin-bottom: 80px;
+
+    @include media-minlaptop {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__contacts {
+    display: flex;
     margin-bottom: 32px;
+
+    @include media-mobile {
+        flex-direction: column;
+    }
 }
 
 .footer__mail,
@@ -45,6 +72,10 @@
     &:hover {
         color: $color-yellow;
     }
+}
+
+.footer__mail {
+    margin-bottom: 15px;
 }
 
 .social-media {
@@ -86,12 +117,21 @@
             @include font (1.4rem, 400, 18px);
             color: $color-light-gray;
             @extend %transition;
+
+            @include media-minmobile {
+                font-size: 1.2rem;
+
+            }
         };
         &:hover a, &:hover svg path {
             fill: $color-yellow;
             color: $color-yellow;
             text-decoration: underline;
         }
+    };
+
+    @include media-minmobile {
+        width: 250px;
     }
 }
 
@@ -115,15 +155,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-mobile {
+        flex-direction: column;
+    }
 }
 
 .copyright__name {
     @include font (1.4rem, 600, 18px);
     color: $color-white;
+
+    @include media-minmobile {
+        font-size: 1.2rem;
+    }
 }
 
 .copyright__link {
     @include font (1.4rem, 600, 18px);
     color: $color-white;
     text-decoration-line: underline;
+
+    @include media-minmobile {
+        font-size: 1rem;
+    }
 }
