@@ -23,7 +23,7 @@
     margin-bottom: 40px;
 }
 
-.program-offers__offer {
+.program-offer {
     position: relative;
     padding-left: 66px;
 
@@ -31,30 +31,30 @@
         margin-bottom: 40px;
     }
 
-    &.first--offer::after {
+    &.first-offer::after {
         @include offer-icon ('../images/program-offers/experienced-guide.svg')
     };
-    &.second--offer::after {
+    &.second-offer::after {
         @include offer-icon ('../images/program-offers/safe.svg')
     };
-    &.third--offer::after {
+    &.third-offer::after {
         @include offer-icon ('../images/program-offers/price.svg')
     }
 }
 
-.offer__title {
+.program-offer__title {
     @include font (1.8rem, 700, 20px);
     color: $color-black;
     letter-spacing: 0.216px;
     margin-bottom: 4px;
 }
 
-.offer__text {
+.program-offer__text {
     @include font (1.4rem, 400, 20px);
     color: $color-black;
 }
 
-.offers__button {
+.offers-button {
     display: block;
     margin: auto;
 }

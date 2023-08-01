@@ -18,7 +18,7 @@
     }
 }
 
-.centred--button {
+.centred-button {
     display: block;
     width: 244px;
     text-align: center;
@@ -30,7 +30,7 @@
     }
 }
 
-.program__button {
+.program-button {
     padding: 16px 36px;
     background: $color-light-gray;
     border-radius: 4px;
@@ -52,19 +52,19 @@
     }
 }
 
-.offers__button {
+.offers-button {
     width: 215px;
 }
 
-.blog__button {
+.blog-button {
     width: 220px;
 }
 
-.gallery__button {
+.gallery-button {
     width: 178px;
 }
 
-.subscribe--button {
+.subscribe-button {
     align-self: flex-end;
 
     @include media-minlaptop {

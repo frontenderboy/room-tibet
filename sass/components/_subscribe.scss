@@ -46,7 +46,7 @@
     max-width: 536px;
 }
 
-.subscribe__form {
+.form-inner {
     display: flex;
     margin-bottom: 8px;
 
@@ -56,7 +56,7 @@
     }
 }
 
-.form__input {
+.form-inner__input {
     margin-right: 16px;
 
     @include media-mobile {
