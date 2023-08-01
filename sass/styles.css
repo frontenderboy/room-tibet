@@ -1573,10 +1573,6 @@ label {
   line-height: normal;
   color: #FDFDFD;
 }
-.header__list li a:active {
-  color: #F2BE22;
-  text-decoration: underline;
-}
 .header__list li a::after {
   content: "";
   position: absolute;
